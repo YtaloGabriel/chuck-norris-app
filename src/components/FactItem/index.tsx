@@ -16,12 +16,16 @@ export const FactItem = () => {
   if (error) return <p>{error}</p>
 
   return (
-    <section className="flex flex-col items-center justify-center min-h-[25rem] w-screen max-w-[40rem] p-6 rounded-lg border-2 border-neutral-200 shadow-sm gap-6">
+    <section
+      className="flex flex-col items-center justify-center min-h-[25rem] w-screen max-w-[40rem] p-6 rounded-lg border-2 border-neutral-200 shadow-sm gap-6"
+      id="factItem"
+    >
       <Image
         src="https://api.chucknorris.io/img/avatar/chuck-norris.png"
         alt="Chuck Norris Icon"
         width={75}
         height={75}
+        id="chuckNorrisIcon"
       />
 
       {loading ? (
